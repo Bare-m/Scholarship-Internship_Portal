@@ -1,0 +1,382 @@
+.hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: min(1180px, calc(100% - 64px));
+  min-height: 480px;
+  margin: 0 auto;
+  padding: 64px 8.5%;
+  overflow: hidden;
+  border-radius: 0 0 26px 26px;
+  background:
+    radial-gradient(ellipse at 86% 16%, rgba(210, 199, 255, 0.62), transparent 35%),
+    linear-gradient(115deg, #f8f6ff 0%, #f0edff 57%, #e8e2ff 100%);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 550px;
+}
+
+.eyebrow {
+  display: inline-block;
+  color: var(--purple);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+}
+
+.hero h1 {
+  margin-top: 21px;
+  color: #24233a;
+  font-size: clamp(3.2rem, 6vw, 5.2rem);
+  font-weight: 780;
+  letter-spacing: -0.075em;
+  line-height: 0.99;
+}
+
+.hero h1 span {
+  color: var(--purple);
+}
+
+.hero-content > p {
+  max-width: 430px;
+  margin-top: 22px;
+  color: #69687c;
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 17px;
+  min-height: 50px;
+  padding: 0 21px;
+  border-radius: 10px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+}
+
+.button-primary {
+  margin-top: 27px;
+  background: var(--purple);
+  box-shadow: 0 8px 18px rgba(107, 76, 230, 0.2);
+  color: #fff;
+}
+
+.button-primary:hover {
+  background: var(--purple-dark);
+  box-shadow: 0 11px 22px rgba(107, 76, 230, 0.27);
+  transform: translateY(-2px);
+}
+
+.button-primary span {
+  font-size: 1.1rem;
+}
+
+.hero-note {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-top: 20px;
+  color: #75738a;
+  font-size: 0.78rem;
+}
+
+.hero-note-mark {
+  display: grid;
+  width: 18px;
+  height: 18px;
+  place-items: center;
+  border-radius: 50%;
+  background: #e4defe;
+  color: var(--purple);
+  font-size: 0.72rem;
+  font-weight: 800;
+}
+
+.hero-art {
+  position: relative;
+  display: grid;
+  width: 340px;
+  height: 300px;
+  margin-right: 1%;
+  place-items: center;
+}
+
+.hero-art-orbit {
+  position: absolute;
+  width: 270px;
+  height: 270px;
+  border: 1px solid rgba(107, 76, 230, 0.2);
+  border-radius: 50%;
+}
+
+.hero-art-orbit::before,
+.hero-art-orbit::after {
+  position: absolute;
+  border: 1px solid rgba(107, 76, 230, 0.13);
+  border-radius: 50%;
+  content: "";
+  inset: 18px;
+}
+
+.hero-art-orbit::after {
+  inset: 39px;
+}
+
+.hero-art-card {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  width: 220px;
+  min-height: 205px;
+  flex-direction: column;
+  justify-content: center;
+  padding: 26px;
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow: 0 22px 65px rgba(65, 48, 132, 0.15);
+  transform: rotate(5deg);
+}
+
+.hero-art-icon {
+  display: grid;
+  width: 35px;
+  height: 35px;
+  margin-bottom: 19px;
+  place-items: center;
+  border-radius: 11px;
+  background: #eee9ff;
+  color: var(--purple);
+  font-size: 1.2rem;
+}
+
+.hero-art-label {
+  color: #8e8ba0;
+  font-size: 0.56rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+
+.hero-art-card strong {
+  margin-top: 7px;
+  color: var(--ink);
+  font-size: 1.25rem;
+  letter-spacing: -0.05em;
+}
+
+.hero-art-line {
+  height: 6px;
+  margin-top: 18px;
+  border-radius: 5px;
+  background: #eeeaf8;
+}
+
+.hero-art-line-short {
+  width: 62%;
+  margin-top: 8px;
+}
+
+.hero-art-spark {
+  position: absolute;
+  z-index: 1;
+  color: var(--purple);
+}
+
+.hero-art-spark-one {
+  top: 23px;
+  right: 51px;
+  font-size: 1.5rem;
+}
+
+.hero-art-spark-two {
+  bottom: 36px;
+  left: 18px;
+  color: #efaa63;
+  font-size: 1.7rem;
+}
+
+#scholarships,
+#internships,
+#about {
+  scroll-margin-top: 24px;
+}
+
+.opportunities-section {
+  width: min(1180px, calc(100% - 64px));
+  margin: 0 auto;
+  padding: 84px 0 76px;
+}
+
+.internships-section {
+  padding-top: 0;
+}
+
+.section-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.section-heading h2,
+.about-section h2 {
+  margin-top: 11px;
+  color: var(--ink);
+  font-size: clamp(1.8rem, 3vw, 2.45rem);
+  font-weight: 750;
+  letter-spacing: -0.06em;
+}
+
+.section-heading p {
+  margin-top: 9px;
+  color: var(--muted);
+  font-size: 0.94rem;
+  line-height: 1.6;
+}
+
+.opportunity-count {
+  flex: 0 0 auto;
+  padding: 9px 13px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: #727084;
+  font-size: 0.76rem;
+  font-weight: 650;
+}
+
+.opportunity-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  margin-top: 30px;
+}
+
+.about-section {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  width: min(1180px, calc(100% - 64px));
+  margin: 0 auto 82px;
+  padding: 38px 44px;
+  border: 1px solid #eeebfa;
+  border-radius: 18px;
+  background: linear-gradient(110deg, #faf9ff, #f6f3ff);
+}
+
+.about-mark {
+  display: grid;
+  width: 58px;
+  height: 58px;
+  flex: 0 0 auto;
+  place-items: center;
+  border-radius: 17px;
+  background: #eae5ff;
+  color: var(--purple);
+  font-size: 1.7rem;
+}
+
+.about-section h2 {
+  margin-top: 7px;
+  font-size: 1.65rem;
+}
+
+.about-section p {
+  max-width: 700px;
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 0.91rem;
+  line-height: 1.7;
+}
+
+@media (max-width: 900px) {
+  .hero {
+    min-height: 430px;
+    padding: 54px 6%;
+  }
+
+  .hero-art {
+    width: 280px;
+    margin-right: -20px;
+    transform: scale(0.88);
+  }
+
+  .opportunity-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 680px) {
+  .hero,
+  .opportunities-section,
+  .about-section {
+    width: calc(100% - 36px);
+  }
+
+  .hero {
+    min-height: initial;
+    padding: 56px 26px 36px;
+  }
+
+  .hero h1 {
+    font-size: clamp(3rem, 12vw, 4.1rem);
+  }
+
+  .hero-content > p {
+    font-size: 0.92rem;
+  }
+
+  .hero-art {
+    display: none;
+  }
+
+  .opportunities-section {
+    padding: 64px 0;
+  }
+
+  .internships-section {
+    padding-top: 0;
+  }
+
+  .section-heading {
+    align-items: start;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .opportunity-list {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-top: 23px;
+  }
+
+  .about-section {
+    align-items: start;
+    gap: 17px;
+    margin-bottom: 56px;
+    padding: 25px 21px;
+  }
+
+  .about-mark {
+    width: 44px;
+    height: 44px;
+    border-radius: 13px;
+    font-size: 1.35rem;
+  }
+
+  .about-section h2 {
+    font-size: 1.35rem;
+  }
+
+  .about-section .eyebrow {
+    font-size: 0.6rem;
+  }
+}
