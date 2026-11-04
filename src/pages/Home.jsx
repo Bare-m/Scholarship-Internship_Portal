@@ -21,11 +21,14 @@ function Home() {
               <span>possible.</span>
             </h1>
             <p>
-              Find scholarships that bring your education goals within reach.
+              Find scholarships and internships that bring your education goals within reach.
               Explore opportunities and take the next step toward your future.
             </p>
             <a className="button button-primary" href="#scholarships">
-              Explore scholarships <span aria-hidden="true">→</span>
+              Explore opportunities <span aria-hidden="true">→</span>
+            </a>
+            <a className="button button-secondary" href="#internships">
+              Explore internships <span aria-hidden="true">→</span>
             </a>
             <div className="hero-note">
               <span className="hero-note-mark" aria-hidden="true">✓</span>
